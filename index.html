@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Race</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--  page1 -->
+    <div id="begin">
+      <button id="startbtn">Start</button>
+    </div>
+
+    <!-- page2 -->
+    <div id="wrapper">
+      <div id="left"></div>
+      <div id="mid">
+        <div id="road"></div>
+        <div id="mycar"></div>
+        <div id="upcar"></div>
+      </div>
+      <div id="right"></div>
+    </div>
+
+    <!-- page3 -->
+    <div id="end">
+      <img id="winimg" src="images/win.gif" />
+      <h2 id="score"></h2>
+      <button id="homebtn" onclick="location.reload()">Home</button>
+    </div>
+
+    <!-- songs -->
+    <audio id="startsong" src="music/startsong.mp3" loop></audio>
+    <audio id="midsong" src="music/midsong.mp3" loop></audio>
+    <audio id="endsong" src="music/endsong.wav"></audio>
+    <audio id="horn" src="music/horn.wav"></audio>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
