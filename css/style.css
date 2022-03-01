@@ -1,149 +1,149 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-}
-body {
-  width: 100%;
-  height: 100vh;
-  background-color: rgb(31, 31, 31);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* page1 */
-#begin {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/bg5.gif");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-#startbtn,
-#homebtn {
-  margin-top: 100px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 10px;
-  font-weight: 900;
-  color: #fff;
-  background: linear-gradient(45deg, rgb(4, 89, 245), rgb(8, 191, 247));
-  animation: startbtn 1.5s linear infinite;
-}
-@keyframes startbtn {
-  50% {
-    transform: scale(1.1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
   }
-  100% {
-    background: linear-gradient(45deg, rgb(8, 191, 247), rgb(4, 89, 245));
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
-}
-
-#homebtn {
-  margin-top: 20px;
-  background: linear-gradient(45deg, gold, rgb(247, 16, 8));
-  animation: homebtn 1.5s linear infinite;
-}
-@keyframes homebtn {
-  50% {
-    transform: scale(1.1);
+  
+  /* page1 */
+  #begin {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/bg5.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
-}
-
-/* page2 */
-#wrapper {
-  width: 100%;
-  height: 100vh;
-  display: none;
-}
-#mid,
-#left,
-#right {
-  width: calc(100% / 3);
-  height: 100vh;
-}
-#left,
-#right,
-#road {
-  background-image: url("../images/g8.jpg");
-  background-size: contain;
-  position: relative;
-  top: -100%;
-  height: 200%;
-  animation: scrol 5s linear infinite;
-}
-#road {
-  background-image: url("../images/r7.jpg");
-  animation-duration: 1.3s;
-}
-@keyframes scrol {
-  100% {
-    top: 0;
+  #startbtn,
+  #homebtn {
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(4, 89, 245), rgb(8, 191, 247));
+    animation: startbtn 1.5s linear infinite;
   }
-}
-
-#mycar {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 90px;
-  height: 120px;
-  background-image: url("../images/car4.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  filter: drop-shadow(10px 10px 10px #000);
-  animation: bounce 2s linear infinite;
-}
-@keyframes bounce {
-  50% {
-    transform: translate(-50%) scale(1.04);
+  @keyframes startbtn {
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      background: linear-gradient(45deg, rgb(8, 191, 247), rgb(4, 89, 245));
+    }
   }
-}
-#upcar {
-  position: absolute;
-  top: -130px;
-  left: 40%;
-  transform: translate(-50%) rotate(180deg);
-  width: 90px;
-  height: 120px;
-  background-image: url("../images/car2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  filter: drop-shadow(10px 10px 10px #000);
-  animation: upcoming 1.2s linear infinite;
-}
-@keyframes upcoming {
-  50% {
-    transform:translate(-50%) rotate(180deg) scale(1.04);
+  
+  #homebtn {
+    margin-top: 20px;
+    background: linear-gradient(45deg, gold, rgb(247, 16, 8));
+    animation: homebtn 1.5s linear infinite;
   }
-  100% {
-    top: 100vh;
+  @keyframes homebtn {
+    50% {
+      transform: scale(1.1);
+    }
   }
-}
-
-/* page3 */
-#end {
-  width: 400px;
-  height: 400px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  margin-top: -100px;
-}
-#winimg {
-  width: 100%;
-  height: 75%;
-}
+  
+  /* page2 */
+  #wrapper {
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+  #mid,
+  #left,
+  #right {
+    width: calc(100% / 3);
+    height: 100vh;
+  }
+  #left,
+  #right,
+  #road {
+    background-image: url("../images/g8.jpg");
+    background-size: contain;
+    position: relative;
+    top: -100%;
+    height: 200%;
+    animation: scrol 5s linear infinite;
+  }
+  #road {
+    background-image: url("../images/r7.jpg");
+    animation-duration: 1.3s;
+  }
+  @keyframes scrol {
+    100% {
+      top: 0;
+    }
+  }
+  
+  #mycar {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 110px;
+    background-image: url("../images/mycar.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(10px 10px 10px #000);
+    animation: bounce 2s linear infinite;
+  }
+  @keyframes bounce {
+    50% {
+      transform: translate(-50%) scale(1.04);
+    }
+  }
+  #upcar {
+    position: absolute;
+    top: -150px;
+    left: 40%;
+    transform: translate(-50%) rotate(180deg);
+    width: 170px;
+    height: 110px;
+    background-image: url("../images/car2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(10px 10px 10px #000);
+    animation: upcoming 1.4s linear infinite;
+  }
+  @keyframes upcoming {
+    50% {
+      transform:translate(-50%) rotate(180deg) scale(1.04);
+    }
+    100% {
+      top: 100vh;
+    }
+  }
+  
+  /* page3 */
+  #end {
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    margin-top: -100px;
+  }
+  #winimg {
+    width: 100%;
+    height: 75%;
+  }
